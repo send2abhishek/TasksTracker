@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tasks Tracker</string>
+
+    <string-array name="duration">
+        <item>Hours</item>
+        <item>Minutes</item>
+    </string-array>
+</resources>

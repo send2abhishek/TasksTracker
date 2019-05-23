@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="18dp"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimaryDark">
+
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@mipmap/ic_profile_img"
+            android:id="@+id/navigation_profile"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/navigation_profile_name"
+            android:layout_toRightOf="@id/navigation_profile"
+            android:text="Abhishek Kumar"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/navigation_profile_username"
+            android:layout_below="@id/navigation_profile_name"
+            android:text="AbhishekCool12347@gmail.com"
+            android:layout_alignLeft="@id/navigation_profile_name"
+            android:textSize="12sp"
+            android:textColor="#fff"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:id="@+id/navigation_profile_logout"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@mipmap/ic_log_out"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="6dp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

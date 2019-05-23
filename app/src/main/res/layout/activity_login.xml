@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:gravity="center"
+       android:layout_marginTop="30dp"
+       android:layout_height="wrap_content">
+
+       <ImageView
+           android:layout_width="110dp"
+           android:layout_height="110dp"
+           android:src="@mipmap/ic_app_logo"
+           />
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="24dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:drawableLeft="@mipmap/ic_user"
+                android:id="@+id/activity_login_username"
+                />
+
+
+                <EditText
+                    android:id="@+id/activity_login_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:layout_below="@id/activity_login_username"
+                    android:drawableLeft="@mipmap/ic_pass"
+                    android:hint="Password"
+                    />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Forgot Password?"
+                        android:fontFamily="Roboto"
+                        android:textSize="14sp"
+                        android:id="@+id/activity_login_forget_password"
+                        android:textAlignment="viewEnd"
+                        android:gravity="end"
+                        android:textStyle="italic"
+                        android:layout_below="@id/activity_login_Password"
+                        />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/activity_login_sign_btn"
+                        android:layout_marginTop="14dp"
+                        android:layout_below="@id/activity_login_forget_password"
+                        android:background="@drawable/signin"
+                        android:text="Sign In"
+                        android:textColor="#FFF"
+                        android:textAllCaps="false"
+                        />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/activity_login_sign_up_btn"
+                        android:layout_marginTop="12dp"
+                        android:layout_below="@id/activity_login_sign_btn"
+                        android:background="@drawable/signup"
+                        android:text="Sign Up"
+                        android:textColor="#AFC5FC"
+                        android:textAllCaps="false"
+                        />
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

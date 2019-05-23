@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/activity_home_toolbar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="24dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Task Title"
+                android:drawableLeft="@mipmap/ic_user"
+                android:id="@+id/activity_task_title"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Task Description"
+                android:drawableLeft="@mipmap/ic_task_desc"
+                android:id="@+id/activity_add_task_dsc"
+                android:layout_below="@id/activity_task_title"
+                />
+
+
+            <EditText
+                android:id="@+id/activity_add_task_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_add_task_dsc"
+                android:drawableLeft="@mipmap/ic_task_date"
+                android:hint="Task Start Date"
+                />
+            <EditText
+                android:id="@+id/activity_add_task_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginRight="2dp"
+                android:layout_below="@id/activity_add_task_date"
+                android:drawableLeft="@mipmap/ic_task_duration"
+                android:hint="Task Start Time "
+                />
+
+            <EditText
+                android:id="@+id/activity_add_task_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginRight="2dp"
+                android:layout_below="@id/activity_add_task_start_time"
+                android:drawableLeft="@mipmap/ic_task_duration"
+                android:hint="Task End Time "
+                />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_add_taskAdd_btn"
+                android:layout_marginTop="14dp"
+                android:layout_below="@id/activity_add_task_end_time"
+                android:background="@drawable/signin"
+                android:text="Add Task"
+                android:textColor="#FFF"
+                android:textAllCaps="false"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
